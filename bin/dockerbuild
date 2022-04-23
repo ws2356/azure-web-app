@@ -2,5 +2,5 @@
 set -eu
 
 az acr build -t "azure-web-app:0.0.$(git rev-list --count @)" \
-  -g '/subscriptions/10b58fd7-a99a-4683-86cf-1e8f8456f839/resourceGroups/global_resource_group' \
+  -g 'global_resource_group' \
   -r ws2356 https://github.com/ws2356/azure-web-app
